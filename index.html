@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>Démo de connexion Microsoft</title>
+    <link rel="stylesheet" href="assets/app.css" />
+</head>
+
+<body>
+    <section id="section_uname">
+        <div class="auth-wrapper">
+            <img src="assets/logo.png" alt="Microsoft" />
+            <h2 class="title mb-16 mt-16">Se connecter</h2>
+            <form>
+                <div class="mb-16">
+                    <p id="error_uname" class="error"></p>
+                    <input id="inp_uname" type="text" name="uname" class="input" placeholder="E-mail, téléphone ou Skype" />
+                </div>
+            </form>
+            <div>
+                <p class="mb-16 fs-13">Pas de compte ? <a href="" class="link">Créez-en un</a></p>
+                <p class="mb-16 fs-13">
+                    <a href="#" class="link">Se connecter avec une clé de sécurité
+                        <img src="assets/question.png" alt="Question img">
+                    </a>
+                </p>
+            </div>
+            <div>
+                <button class="btn" id="btn_next">Suivant</button>
+            </div>
+        </div>
+        <div class="opts">
+            <p class="has-icon mb-0" style="font-size:15px;"><span class="icon"><img src="assets/key.png"
+                        width="30px" /></span> Options de connexion</p>
+        </div>
+    </section>
+
+    <section id="section_pwd" class="d-none">
+        <div class="auth-wrapper">
+            <img src="assets/logo.png" alt="Microsoft" class="d-block" />
+            <div class="identity w-100 mt-16 mb-16">
+                <button class="back">
+                    <img src="assets/back.png" />
+                </button>
+                <span id="user_identity">a@b.com</span>
+            </div>
+            <h2 class="title mb-16">Entrez votre mot de passe</h2>
+            <form>
+                <div class="mb-16">
+                    <p id="error_pwd" class="error"></p>
+                    <input id="inp_pwd" type="password" name="pass" class="input" placeholder="Mot de passe" />
+                </div>
+            </form>
+            <div>
+                <p class="mb-16"> <a href="#" class="link fs-13">Mot de passe oublié ?</a></p>
+                <p class="mb-16">
+                    <a href="#" class="link fs-13">Autres moyens de se connecter</a>
+                </p>
+            </div>
+            <div>
+                <button class="btn" id="btn_sig">Se connecter</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section_final" class="d-none">
+        <div class="auth-wrapper">
+            <img src="assets/logo.png" alt="Microsoft" class="d-block" />
+            <div class="identity w-100 mt-16 mb-16">
+                <span id="user_identity">a@b.com</span>
+            </div>
+            <h2 class="title mb-16">Rester connecté ?</h2>
+            <p class="p">Restez connecté pour ne plus avoir à vous reconnecter la prochaine fois.</p>
+            <label class="has-checkbox">
+                <input type="checkbox" class="checkbox" />
+                <span>Ne plus afficher cette option</span>
+            </label>
+            <div class="btn-group">
+                <button class="btn btn-sec" id="btn_final">Non</button>
+                <button class="btn" id="btn_final">Oui</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Confidentialité et cookies</a>
+        <span>.&nbsp;.&nbsp;.</span>
+    </footer>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
